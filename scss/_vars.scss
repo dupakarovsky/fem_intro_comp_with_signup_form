@@ -1,0 +1,20 @@
+:root {
+   // ## CUSTOM COLORS
+   // ### Primary
+   --primary-1: 0 100% 74%; // hsl(0 100% 74%);
+   --primary-2: 154 59% 51%; // hsl(154 59% 51%);
+   --accent-1: 248 32% 49%; //hsl(248 32% 49%);
+   --neutral-1: 249 10% 26%; //hsl(249 10% 26%);
+   --neutral-2: 246 25% 77%; //hsl(246 25% 77%)
+
+   // ## CUSTOM FONTS
+   // ### Sans Fonts
+   --font-sans-custom-1: "Poppins";
+
+   // ## CUSTOM SHADOWS
+   --shadow-custom-1: 0px 8px 0px 0.25px hsl(var(--gray-12-hsl) / 0.2);
+   --shadow-custom-2: 0px 6px 0px 0.25px hsl(var(--green-8-hsl));
+
+   // ### CUSTOM SIZES
+   --font-size-000: 0.625rem;
+}

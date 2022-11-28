@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <title>Frontend Mentor | Intro component with sign up form</title>
+      <meta charset="utf-8" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="mobile-web-app-capable" content="yes" />
+      <meta name="description" content="🙂" />
+      <meta name="color-scheme" content="dark light" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="index.scss" />
+      <script defer type="module" src="/index.js"></script>
+   </head>
+
+   <body>
+      <main class="main grid">
+         <!-- Heading -->
+         <div class="heading">
+            <h1 class="heading__title">Learn to Code by watching others</h1>
+            <p class="heading__text">
+               See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+               understanding how developers think is invaluable.
+            </p>
+         </div>
+         <div class="submission grid">
+            <!-- Princing  -->
+            <div class="submission__pricing"><span>Try it free 7 days</span> then $20/mo.thereafter</div>
+            <!-- Form  -->
+            <form class="submission__form form" action="#" novalidates>
+               <!-- First Name  -->
+               <div class="form__input-wrapper">
+                  <input
+                     type="text"
+                     id="input-firstname"
+                     name="firstname"
+                     class="form__input form__input--firstname valid"
+                     placeholder="First Name"
+                  />
+                  <label id="label-firstname" class="form__label from__label--firstname" for="firstname"
+                     >First Name cannot be empty</label
+                  >
+                  <img class="icon-error" src="./images/icon-error.svg" alt="Icon Error" aria-hidden="true" hidden />
+                  <img class="icon-check" src="./images/icon-check.svg" alt="Icon Check" aria-hidden="true" hidden />
+               </div>
+
+               <!-- Last Name  -->
+               <div class="form__input-wrapper">
+                  <input
+                     type="text"
+                     id="input-lastname"
+                     name="lastname"
+                     class="form__input form__input--lastname valid"
+                     placeholder="Last Name"
+                  />
+                  <label id="lable-lastname" class="form__label from__label--lastname" for="lastname"
+                     >Last Name cannot be empty</label
+                  >
+                  <img class="icon-error" src="./images/icon-error.svg" alt="Icon Error" aria-hidden="true" hidden />
+                  <img class="icon-check" src="./images/icon-check.svg" alt="Icon Check" aria-hidden="true" hidden />
+               </div>
+
+               <!-- Email  -->
+               <div class="form__input-wrapper">
+                  <input
+                     type="text"
+                     id="input-email"
+                     name="email"
+                     name="email"
+                     class="form__input form__input--email valid"
+                     placeholder="Email"
+                  />
+                  <label id="label-email" class="form__label form__label--email" for="email"
+                     >Looks like this is not an email</label
+                  >
+                  <img class="icon-error" src="./images/icon-error.svg" alt="Icon Error" aria-hidden="true" hidden />
+                  <img class="icon-check" src="./images/icon-check.svg" alt="Icon Check" aria-hidden="true" />
+               </div>
+
+               <!-- Password  -->
+               <div class="form__input-wrapper">
+                  <input
+                     type="password"
+                     id="input-password"
+                     name="password"
+                     name="password"
+                     class="form__input form__input--password valid"
+                     placeholder="Password"
+                  />
+                  <label id="label-password" class="form__label form__label--password" for="password" hidden
+                     >Must 08 chars. long, with uppercase, lowercase and numbers</label
+                  >
+                  <img class="icon-error" src="./images/icon-error.svg" alt="Icon Error" aria-hidden="true" hidden />
+                  <img class="icon-check" src="./images/icon-check.svg" alt="Icon Check" aria-hidden="true" hidden />
+               </div>
+
+               <!-- CTA  -->
+               <button id="cta" class="btn cta">claim you free trail</button>
+
+               <!-- TOS  -->
+               <div class="terms">
+                  <p class="terms__text">
+                     By clicking the button, you are agreeing to our
+                     <span>Terms and Services</span>
+                  </p>
+               </div>
+            </form>
+         </div>
+      </main>
+   </body>
+</html>

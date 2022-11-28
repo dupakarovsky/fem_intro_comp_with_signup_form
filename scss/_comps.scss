@@ -1,0 +1,54 @@
+@use "functions";
+
+%btn {
+   width: 100%;
+   text-transform: uppercase;
+   font-size: var(--font-size-1);
+   color: #fff;
+   text-shadow: none;
+   font-weight: weights("regular");
+   padding-block: var(--size-3);
+   border: none;
+   background-color: hsl(var(--primary-2));
+   box-shadow: var(--shadow-custom-2);
+
+   &:hover {
+      background-color: hsl(var(--green-4-hsl));
+   }
+   &:active {
+      background-color: hsl(var(--green-3-hsl));
+   }
+
+   &:focus-visible:not([disabled]) {
+      outline: 2px solid var(--green-5);
+      outline-offset: 4px;
+   }
+}
+
+%form-input {
+   width: 100%;
+   background-color: #fff;
+   padding: var(--size-3);
+   border: 1px solid hsl(var(--gray-3-hsl));
+
+   &::placeholder {
+      color: hsl(var(--gray-6-hsl));
+   }
+
+   &:focus:not([disabled]) {
+      outline: 1px solid hsl(var(--gray-8-hsl));
+      outline-offset: var(--size-0);
+   }
+}
+
+%form-label {
+   display: block;
+   color: hsl(var(--red-7-hsl));
+   font-weight: functions.weights("regular");
+   font-style: italic;
+   text-align: right;
+   margin-inline-end: var(--size-2);
+   margin-block-start: var(--size-2);
+   visibility: visible;
+   transition: opacity 0.2s, transform 0.2s, margin 0.2s;
+}

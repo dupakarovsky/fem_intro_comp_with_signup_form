@@ -1,0 +1,17 @@
+.grid {
+   display: grid;
+   grid-auto-flow: row;
+   align-items: center;
+}
+
+.form__input.valid + .form__label {
+   margin-block-start: -10px !important;
+   transform: translateY(-125%);
+   visibility: hidden;
+   opacity: 0;
+   transition: opacity 0.2s, transform 0.2s, margin 0.2;
+}
+
+.form__input:not(.valid) {
+   outline: 2px solid hsl(var(--red-7-hsl));
+}

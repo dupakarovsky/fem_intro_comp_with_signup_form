@@ -1,0 +1,29 @@
+@mixin color-theme {
+   :root {
+      --brand-light: var(--orange-7);
+      --text-light: var(--gray-10);
+      --surface-light: var(--gray-3);
+
+      --brand-dark: var(--orange-5);
+      --textd-ark: var(--gray-3);
+      --surface-dark: var(--gray-9);
+   }
+}
+@mixin media-prefers-theme-light {
+   @media screen and (prefers-color-scheme: light) {
+      :root {
+         --brand: var(--brand-light);
+         --text: var(--text-light);
+         --surface: var(--surface-light);
+      }
+   }
+}
+@mixin media-prefers-theme-dark {
+   @media screen and (prefers-color-scheme: dark) {
+      :root {
+         --brand: var(--brand-dark);
+         --text: var(--text-dark);
+         --surface: var(--surface-dark);
+      }
+   }
+}
