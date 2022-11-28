@@ -20,11 +20,12 @@ body {
 
 .heading {
    font-family: inherit;
-   color: inherit;
+
    text-align: center;
    margin-block-end: var(--size-5);
 
    &__title {
+      color: white;
       font-size: var(--font-size-fluid-2);
       font-weight: weights("bold");
       max-inline-size: unset;
